@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Character Counter</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="text">
+        <h1>Character Counter</h1>
+        <p>Type and see the number of characters typed.</p>
+        <p>
+          Use your voice to type if you prefer. Click on the microphone and
+          speak :)
+        </p>
+      </div>
+      <div class="input">
+        <form>
+          <button class="start_button">
+            <img
+              alt="Microphone"
+              class="start_img"
+              src="/assets/img/microphone.png"
+            />
+          </button>
+          <textarea id="textarea" type="text"></textarea>
+        </form>
+      </div>
+      <div class="typed">
+        <p>You typed: <span class="counter">0</span> characters</p>
+
+        <button class="btn copy">Copy text</button>
+        <button class="btn clean">Clean</button>
+      </div>
+    </div>
+
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
